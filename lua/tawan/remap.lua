@@ -14,6 +14,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set("n", "<leader>pp", [["+p]])
 
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
