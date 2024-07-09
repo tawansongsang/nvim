@@ -18,6 +18,8 @@ return {
           lsp_zero.default_keymaps({buffer = bufnr})
         end)
 
+        lsp_zero.rust_analyzer.setup{}
+
         require('mason').setup({})
         require('mason-lspconfig').setup({
           ensure_installed = {
@@ -25,8 +27,10 @@ return {
             "marksman",
           },
           handlers = {
-            lsp_zero.default_setup,
-          },
+            function(server_name)
+              require('lspconfig')[server_name].setup({})
+            end,
+          }
         })
     end,
 }
