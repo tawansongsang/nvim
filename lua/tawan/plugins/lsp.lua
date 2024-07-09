@@ -18,7 +18,7 @@ return {
           lsp_zero.default_keymaps({buffer = bufnr})
         end)
 
-        lsp_zero.rust_analyzer.setup{}
+        require'lspconfig'.rust_analyzer.setup{}
 
         require('mason').setup({})
         require('mason-lspconfig').setup({
