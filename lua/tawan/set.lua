@@ -8,7 +8,7 @@ vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
-vim.opt.mouse "a"
+vim.opt.mouse = "a"
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
